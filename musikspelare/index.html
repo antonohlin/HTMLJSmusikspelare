@@ -1,0 +1,102 @@
+<!-- Anton Öhlin -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/6344fa2a01.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script defer src="my_script.js"></script>
+</head>
+<body>
+<header>
+        <section class="playlistname">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+                        <p>Playlist: Carpe Yolo</p>
+                        <i class="fas fa-ellipsis-v fa-2x"></i>
+        </section>
+</header>
+<section class="content">
+<section class="column" #="playlist">
+        <section class="song" id="marker1">
+                <section class="cover" id="song1"></section>
+                <section class="infoPL">
+                        <section class="artist">Tonsatt feat. Edward Blom</section> 
+                        <section class="songPL">När man festar festar man</section>
+                </section>
+                <i class="fas fa-play-circle" id="play1"></i>
+                <i class="fas fa-pause-circle" id="pause1" style="display:none"></i>
+        </section>
+        <section class="song" id="marker2">
+                <section class="cover" id="song2"></section>
+                <section class="infoPL">
+                        <section class="artist">To The Grave</section> 
+                        <section class="songPL">Hearteater</section>
+                </section>
+                <i class="fas fa-play-circle" id="play2"></i>
+                <i class="fas fa-pause-circle" id="pause2" style="display:none"></i>
+        </section>
+        <section class="song" id="marker3">
+                <section class="cover" id="song3"></section>
+                <section class="infoPL">
+                        <section class="artist">a-ha</section> 
+                        <section class="songPL">Take on Me</section>
+                </section>
+                <i class="fas fa-play-circle" id="play3"></i>
+                <i class="fas fa-pause-circle" id="pause3" style="display:none"></i>
+        </section>
+        <section class="song" id="marker4">
+                <section class="cover" id="song4"></section>
+                <section class="infoPL">
+                        <section class="artist">Dead Crown</section> 
+                        <section class="songPL">Twenty Four</section>
+                </section>
+                <i class="fas fa-play-circle" id="play4"></i>
+                <i class="fas fa-pause-circle" id="pause4" style="display:none"></i>
+        </section>
+        <section class="song" id="marker5">
+                <section class="cover" id="song5"></section>
+                <section class="infoPL">
+                        <section class="artist">Teletubbies</section> 
+                        <section class="songPL">Teletubbies Theme</section>
+                </section>
+                <i class="fas fa-play-circle" id="play5"></i>
+                <i class="fas fa-pause-circle" id="pause5" style="display:none"></i>
+        </section>
+
+</section>
+<section class="column" #="player">
+        <section class="item">                
+                <section class="blur">
+                </section>
+                <section class="image">
+                </section>
+
+        </section>
+        <section class="item">
+                <section class="info">
+                       <section class="artist" id="artistPlaying">Tonsatt feat. Edward Blom</section> 
+                       <section class="songplaying" id="songPlaying">När man festar festar man</section> 
+                </section>
+                <i class="fas fa-plus fa-2x"></i> 
+                <i class="fas fa-heart fa-2x"></i>
+                
+    
+        </section>
+        <section class="item" id="timeline">
+                <section id="past">0:00</section> 
+                <section class="time"></section>
+                <section id="total">--:--</section> 
+        </section>
+        <section class="item" id="buttons">
+                <i class="fas fa-redo fa-2x"></i> 
+                <i class="fas fa-backward fa-2x" id="backward"></i>
+                <i class="fas fa-play-circle fa-3x" id="playicon"></i>
+                <i class="fas fa-pause-circle fa-3x" id="pauseicon" style="display:none"></i>
+                <i class="fas fa-forward fa-2x" id="forward"></i>
+                <i class="fas fa-random fa-2x"></i>
+</section>
+</section>
+</body>
+</html>

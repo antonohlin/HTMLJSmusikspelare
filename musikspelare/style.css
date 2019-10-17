@@ -1,0 +1,131 @@
+/* Anton Öhlin */
+*{
+    box-sizing: border-box;
+}
+.content {
+    display:flex;
+    flex: 1;
+}
+.column {
+    flex: 1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:#051a24; 
+}
+.song {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-image: linear-gradient(#0A2733,#134A61);
+    position: relative;
+}
+
+.cover {
+    background-image: url(https://images.genius.com/5783f4707c3e4b1f8850822db465cff7.800x800x1.jpg);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    box-shadow: 3px 3px #081e2b;
+    margin-left: 80px;
+}
+
+.item {
+    flex-grow: 1;
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0a2738;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item:first-child {
+    flex-grow: 6;
+    overflow: hidden;
+}
+
+.image {
+    background-image: url(https://images.genius.com/5783f4707c3e4b1f8850822db465cff7.800x800x1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width:80%;
+    height: 80%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.blur {
+    background-image: url(https://images.genius.com/5783f4707c3e4b1f8850822db465cff7.800x800x1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    filter: blur(80px);
+}
+.time{
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    height: 8px;
+    border-radius: 5px;
+}
+.info {
+    position: absolute;
+    flex-direction: column;
+    font-size: 120%;
+    text-align: center;
+}
+.infoPL {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 80px;
+}
+#play1,#play2,#play3,#play4,#play5{
+    position: absolute;
+    right: 50px;
+}
+#pause1,#pause2,#pause3,#pause4,#pause5{
+    position: absolute;
+    right: 50px;
+}
+.artist {
+font-weight: bold;
+}
+
+.playlistname {
+    width: 100%;
+    height: 40px;
+    background-color: #0a2738;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+i:hover{
+    color: darkslategray;
+}
+#song1{
+    background-image: url(https://images.genius.com/5783f4707c3e4b1f8850822db465cff7.800x800x1.jpg);
+}
+#song2{
+    background-image: url(https://images.genius.com/60049460e9dd982fb921ad5ac9cbd4a3.999x1000x1.jpg);
+}
+#song3{
+    background-image: url(http://soulsurge.cloud/wp-content/uploads/2018/05/IMG_2167-749x675.jpg);
+}
+#song4{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/cover/d2fbcd9c7a4c130f89343e2b256436bf/1400x1400-000000-80-0-0.jpg);
+}
+#song5{
+    background-image: url(https://vignette.wikia.nocookie.net/telletubbies/images/e/e2/Big_hugs_cd.jpg/revision/latest?cb=20180217151101);
+}
